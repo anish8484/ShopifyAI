@@ -1,0 +1,107 @@
+/* App-specific styles */
+
+.App {
+    min-height: 100vh;
+}
+
+/* Chat input styling */
+.chat-input-container {
+    @apply flex items-center gap-2 p-2 bg-white rounded-2xl border border-indigo-100 shadow-lg;
+}
+
+.chat-input-container:focus-within {
+    @apply ring-2 ring-indigo-500/20;
+}
+
+/* Message bubbles */
+.message-user {
+    @apply bg-slate-100 text-slate-900 rounded-2xl rounded-tr-sm px-4 py-2 max-w-[80%];
+}
+
+.message-ai {
+    @apply bg-indigo-50 text-indigo-900 rounded-2xl rounded-tl-sm px-4 py-2 max-w-[80%];
+}
+
+/* Stats card animation */
+.stats-card {
+    @apply bg-white rounded-xl border border-slate-200 p-6 transition-all duration-200;
+}
+
+.stats-card:hover {
+    @apply shadow-md border-indigo-100;
+}
+
+/* Chart container */
+.chart-container {
+    @apply bg-white rounded-xl border border-slate-200 p-6;
+}
+
+/* Sidebar navigation */
+.nav-item {
+    @apply flex items-center gap-3 px-4 py-2.5 rounded-lg text-slate-600 transition-colors;
+}
+
+.nav-item:hover {
+    @apply bg-slate-100 text-slate-900;
+}
+
+.nav-item.active {
+    @apply bg-indigo-50 text-indigo-700;
+}
+
+/* Loading skeleton */
+.skeleton {
+    @apply animate-pulse bg-slate-200 rounded;
+}
+
+/* Badge styles */
+.badge-success {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700;
+}
+
+.badge-warning {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber-50 text-amber-700;
+}
+
+.badge-danger {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-50 text-red-700;
+}
+
+/* Table styles */
+.data-table {
+    @apply w-full text-sm;
+}
+
+.data-table th {
+    @apply text-left text-slate-500 font-medium py-3 px-4 border-b border-slate-200;
+}
+
+.data-table td {
+    @apply py-3 px-4 border-b border-slate-100;
+}
+
+.data-table tr:hover td {
+    @apply bg-slate-50;
+}
+
+/* Question history item */
+.question-item {
+    @apply p-4 border-b border-slate-100 hover:bg-slate-50 transition-colors cursor-pointer;
+}
+
+.question-item:last-child {
+    @apply border-b-0;
+}
+
+/* Confidence indicators */
+.confidence-high {
+    @apply text-emerald-600;
+}
+
+.confidence-medium {
+    @apply text-amber-600;
+}
+
+.confidence-low {
+    @apply text-red-600;
+}
