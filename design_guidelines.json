@@ -1,0 +1,162 @@
+{
+  "identity": {
+    "name": "E1",
+    "archetype": "The Anti-AI Designer",
+    "mission": "Create a Shopify Analytics App that feels like a high-end financial tool mixed with a friendly assistant. Break the 'boring dashboard' mold.",
+    "principles": [
+      "Fusion over Imitation: Mix Swiss Design clarity with AI futurism.",
+      "Emotion First: Data should feel exciting, not just informative.",
+      "Content is King: The 'Answer' is the hero, not the chart.",
+      "Negative Space: Use whitespace to make data digestible."
+    ]
+  },
+  "typography": {
+    "fonts": {
+      "headings": {
+        "family": "Manrope",
+        "weights": ["600", "800"],
+        "usage": "All headings (h1-h6). Use 'ExtraBold' for big numbers."
+      },
+      "body": {
+        "family": "Inter",
+        "weights": ["400", "500"],
+        "usage": "Paragraphs, labels, table data."
+      },
+      "mono": {
+        "family": "JetBrains Mono",
+        "weights": ["400"],
+        "usage": "Code snippets, API keys, raw data views."
+      }
+    },
+    "rules": [
+      "Headings > 32px must use tracking-tight.",
+      "Overlines must be uppercase, text-xs, tracking-widest.",
+      "Never use Inter for Headings.",
+      "Use tabular-nums for all data tables and financial figures."
+    ]
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "name": "Indigo AI",
+        "50": "#eef2ff",
+        "100": "#e0e7ff",
+        "500": "#6366f1",
+        "600": "#4f46e5",
+        "700": "#4338ca",
+        "DEFAULT": "#4f46e5",
+        "foreground": "#ffffff"
+      },
+      "secondary": {
+        "name": "Growth Emerald",
+        "50": "#ecfdf5",
+        "500": "#10b981",
+        "600": "#059669",
+        "DEFAULT": "#10b981",
+        "foreground": "#ffffff"
+      },
+      "background": {
+        "app": "#F8FAFC",
+        "card": "#FFFFFF",
+        "sidebar": "#FFFFFF"
+      },
+      "neutral": {
+        "slate-50": "#f8fafc",
+        "slate-100": "#f1f5f9",
+        "slate-200": "#e2e8f0",
+        "slate-900": "#0f172a"
+      }
+    },
+    "usage": {
+      "primary_action": "bg-primary text-primary-foreground hover:bg-primary/90",
+      "secondary_action": "bg-white text-slate-900 border border-slate-200 hover:bg-slate-50",
+      "accent_text": "text-indigo-600",
+      "success_text": "text-emerald-600",
+      "muted_text": "text-slate-500"
+    },
+    "gradients": {
+      "hero": "bg-gradient-to-br from-indigo-50 via-white to-emerald-50",
+      "ai_glow": "bg-gradient-to-r from-indigo-500 to-purple-500"
+    }
+  },
+  "layout": {
+    "spacing_system": {
+      "base": "p-6",
+      "loose": "p-12",
+      "tight": "p-4",
+      "section_gap": "gap-8"
+    },
+    "grids": {
+      "dashboard": {
+        "name": "The Control Room",
+        "classes": "grid grid-cols-1 md:grid-cols-12 gap-6",
+        "rules": [
+          "Summary cards: col-span-12 md:col-span-3",
+          "Main chart: col-span-12 md:col-span-8 lg:col-span-9",
+          "Side list: col-span-12 md:col-span-4 lg:col-span-3"
+        ]
+      },
+      "landing": {
+        "name": "The Tetris",
+        "classes": "grid grid-cols-1 md:grid-cols-12 gap-8",
+        "rules": [
+          "Hero: col-span-full",
+          "Feature Big: col-span-12 md:col-span-8",
+          "Feature Small: col-span-12 md:col-span-4"
+        ]
+      }
+    },
+    "containers": {
+      "card": "bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-all duration-200",
+      "glass": "bg-white/80 backdrop-blur-xl border border-white/20 shadow-lg"
+    }
+  },
+  "components": {
+    "buttons": {
+      "default": "h-10 px-4 py-2 rounded-lg font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50",
+      "primary": "bg-indigo-600 text-white hover:bg-indigo-700 shadow-sm",
+      "ghost": "hover:bg-slate-100 hover:text-slate-900"
+    },
+    "inputs": {
+      "default": "flex h-10 w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-slate-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 disabled:cursor-not-allowed disabled:opacity-50"
+    },
+    "ai_chat": {
+      "container": "relative w-full max-w-2xl mx-auto",
+      "input_area": "flex items-center gap-2 p-2 bg-white rounded-2xl border border-indigo-100 shadow-lg focus-within:ring-2 focus-within:ring-indigo-500/20",
+      "message_user": "bg-slate-100 text-slate-900 rounded-2xl rounded-tr-sm px-4 py-2 max-w-[80%]",
+      "message_ai": "bg-indigo-50 text-indigo-900 rounded-2xl rounded-tl-sm px-4 py-2 max-w-[80%]"
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_bg": "https://images.pexels.com/photos/18069517/pexels-photo-18069517.png",
+      "team_meeting": "https://images.unsplash.com/photo-1709715357520-5e1047a2b691?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHRlYW0lMjBtZWV0aW5nfGVufDB8fHx8MTc2Njg2MDU0M3ww&ixlib=rb-4.1.0&q=85",
+      "store_owner": "https://images.pexels.com/photos/7289739/pexels-photo-7289739.jpeg",
+      "logo_placeholder": "https://via.placeholder.com/40x40"
+    },
+    "icons": {
+      "library": "lucide-react",
+      "style": "stroke-width-1.5"
+    }
+  },
+  "motion": {
+    "transitions": {
+      "default": "transition-all duration-200 ease-in-out",
+      "slow": "transition-all duration-500 ease-out"
+    },
+    "animations": {
+      "fade_in": "animate-in fade-in duration-500",
+      "slide_up": "animate-in slide-in-from-bottom-4 duration-500"
+    }
+  },
+  "universal_guidelines": [
+    "Do not use gradients for text unless it is a very large heading.",
+    "Always use 'text-slate-500' for secondary text, never pure grey.",
+    "Buttons must have a 'ring' focus state for accessibility.",
+    "Use 'gap-6' or 'gap-8' for dashboard grids to let data breathe.",
+    "Charts must use the defined palette colors (Indigo, Emerald, etc.) not random colors.",
+    "All interactive elements must have 'data-testid'.",
+    "Use 'sonner' for all toast notifications."
+  ],
+  "instructions_to_main_agent": "Implement the design system strictly. Use the provided image URLs. Do not ask for clarification. If a component is missing, build it using the 'card' container style. Prioritize the 'Control Room' grid for the dashboard."
+}
